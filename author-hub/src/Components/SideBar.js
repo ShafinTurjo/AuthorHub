@@ -8,12 +8,12 @@ function Sidebar() {
   return (
     <div className={`d-flex flex-column bg-dark text-white p-3 ${collapsed ? 'collapsed' : 'w-25'}`}>
       <Button variant="secondary" onClick={() => setCollapsed(!collapsed)}>
-        {collapsed ? '→' : '←'}
+        {collapsed ? '...':'...'}
       </Button>
       {!collapsed && (
         <>
-          <Link to="/profile" className="text-white my-2">Profile</Link>
-          <Link to="/articles" className="text-white my-2">My Articles</Link>
+          <Link to="/profile" className="text-white my-2"><h4>Profile</h4></Link>
+          <Link to="/articles" className="text-white my-2"><h4>My Articles</h4></Link>
         </>
       )}
     </div>
